@@ -1,0 +1,49 @@
+/* Second JAVA Application*/
+
+public class Motorcycle {
+String make;
+String color;
+boolean engineState;
+
+void startEngine(){
+if (engineState == ture)
+		System.out.println("The engine is already on.");
+	else
+	{
+		engineState - ture;
+		System.out.println("The engine is now on.");
+	}
+}
+
+void showAtts() {
+	System.out.println("This motoercycle is a" + color +""+make);
+	if(engineState==ture)
+		{
+			System.out.println("The engine is on.");
+		}	
+	else{
+		System.out.println("The engine is off.");
+	}
+}
+}
+
+public class MotorcycleTester
+{
+	public static void main (String args[])
+	{
+		Motorcycle m = new Motorcycle();
+		m.make = "Yamaha RZ350";	
+		m.color = "yellow";
+		System.out.println("Calling showAtts...");
+		m.showAtts();
+		System.out.println("____");
+		System.out.println("Starting engine...");
+		m.startEngine();
+		System.out.println("____");
+		System.out.println("Starting engine...");
+		m.showAtts();
+		System.out.println("____");
+		System.out.println("Starting engine...");
+		m.startEngine();
+	}
+}
